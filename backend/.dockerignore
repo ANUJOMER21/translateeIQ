@@ -1,0 +1,15 @@
+venv
+.venv
+__pycache__
+*.py[cod]
+*.sqlite3
+.env
+.env.*
+chroma_db
+media
+staticfiles
+.venv311
+.venv312
+.venv_deploy_check
+.git
+*.md
