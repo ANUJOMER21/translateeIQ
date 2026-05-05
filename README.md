@@ -120,9 +120,4 @@ OpenAI Whisper
 Anthropic Claude
 ChromaDB
 
-
-
-  Made with ❤️ for teams who want meetings to be actually useful.
-
-
-  ⭐ If you like the project, please give it a star!
+⭐ If you like the project, please give it a star!
