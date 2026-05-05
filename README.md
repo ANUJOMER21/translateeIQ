@@ -92,7 +92,39 @@ Visit: http://localhost:5173
 Tip: Use TRANSCRIPTION_BACKEND=mock in .env for fast development.
 
 📊 Architecture
-#mermaid-diagram-mermaid-vby9m8j{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;fill:#000000;}@keyframes edge-animation-frame{from{stroke-dashoffset:0;}}@keyframes dash{to{stroke-dashoffset:0;}}#mermaid-diagram-mermaid-vby9m8j .edge-animation-slow{stroke-dasharray:9,5!important;stroke-dashoffset:900;animation:dash 50s linear infinite;stroke-linecap:round;}#mermaid-diagram-mermaid-vby9m8j .edge-animation-fast{stroke-dasharray:9,5!important;stroke-dashoffset:900;animation:dash 20s linear infinite;stroke-linecap:round;}#mermaid-diagram-mermaid-vby9m8j .error-icon{fill:#552222;}#mermaid-diagram-mermaid-vby9m8j .error-text{fill:#552222;stroke:#552222;}#mermaid-diagram-mermaid-vby9m8j .edge-thickness-normal{stroke-width:1px;}#mermaid-diagram-mermaid-vby9m8j .edge-thickness-thick{stroke-width:3.5px;}#mermaid-diagram-mermaid-vby9m8j .edge-pattern-solid{stroke-dasharray:0;}#mermaid-diagram-mermaid-vby9m8j .edge-thickness-invisible{stroke-width:0;fill:none;}#mermaid-diagram-mermaid-vby9m8j .edge-pattern-dashed{stroke-dasharray:3;}#mermaid-diagram-mermaid-vby9m8j .edge-pattern-dotted{stroke-dasharray:2;}#mermaid-diagram-mermaid-vby9m8j .marker{fill:#666;stroke:#666;}#mermaid-diagram-mermaid-vby9m8j .marker.cross{stroke:#666;}#mermaid-diagram-mermaid-vby9m8j svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;}#mermaid-diagram-mermaid-vby9m8j p{margin:0;}#mermaid-diagram-mermaid-vby9m8j .label{font-family:"trebuchet ms",verdana,arial,sans-serif;color:#000000;}#mermaid-diagram-mermaid-vby9m8j .cluster-label text{fill:#333;}#mermaid-diagram-mermaid-vby9m8j .cluster-label span{color:#333;}#mermaid-diagram-mermaid-vby9m8j .cluster-label span p{background-color:transparent;}#mermaid-diagram-mermaid-vby9m8j .label text,#mermaid-diagram-mermaid-vby9m8j span{fill:#000000;color:#000000;}#mermaid-diagram-mermaid-vby9m8j .node rect,#mermaid-diagram-mermaid-vby9m8j .node circle,#mermaid-diagram-mermaid-vby9m8j .node ellipse,#mermaid-diagram-mermaid-vby9m8j .node polygon,#mermaid-diagram-mermaid-vby9m8j .node path{fill:#eee;stroke:#999;stroke-width:1px;}#mermaid-diagram-mermaid-vby9m8j .rough-node .label text,#mermaid-diagram-mermaid-vby9m8j .node .label text,#mermaid-diagram-mermaid-vby9m8j .image-shape .label,#mermaid-diagram-mermaid-vby9m8j .icon-shape .label{text-anchor:middle;}#mermaid-diagram-mermaid-vby9m8j .node .katex path{fill:#000;stroke:#000;stroke-width:1px;}#mermaid-diagram-mermaid-vby9m8j .rough-node .label,#mermaid-diagram-mermaid-vby9m8j .node .label,#mermaid-diagram-mermaid-vby9m8j .image-shape .label,#mermaid-diagram-mermaid-vby9m8j .icon-shape .label{text-align:center;}#mermaid-diagram-mermaid-vby9m8j .node.clickable{cursor:pointer;}#mermaid-diagram-mermaid-vby9m8j .root .anchor path{fill:#666!important;stroke-width:0;stroke:#666;}#mermaid-diagram-mermaid-vby9m8j .arrowheadPath{fill:#333333;}#mermaid-diagram-mermaid-vby9m8j .edgePath .path{stroke:#666;stroke-width:2.0px;}#mermaid-diagram-mermaid-vby9m8j .flowchart-link{stroke:#666;fill:none;}#mermaid-diagram-mermaid-vby9m8j .edgeLabel{background-color:white;text-align:center;}#mermaid-diagram-mermaid-vby9m8j .edgeLabel p{background-color:white;}#mermaid-diagram-mermaid-vby9m8j .edgeLabel rect{opacity:0.5;background-color:white;fill:white;}#mermaid-diagram-mermaid-vby9m8j .labelBkg{background-color:rgba(255, 255, 255, 0.5);}#mermaid-diagram-mermaid-vby9m8j .cluster rect{fill:hsl(0, 0%, 98.9215686275%);stroke:#707070;stroke-width:1px;}#mermaid-diagram-mermaid-vby9m8j .cluster text{fill:#333;}#mermaid-diagram-mermaid-vby9m8j .cluster span{color:#333;}#mermaid-diagram-mermaid-vby9m8j div.mermaidTooltip{position:absolute;text-align:center;max-width:200px;padding:2px;font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:12px;background:hsl(-160, 0%, 93.3333333333%);border:1px solid #707070;border-radius:2px;pointer-events:none;z-index:100;}#mermaid-diagram-mermaid-vby9m8j .flowchartTitleText{text-anchor:middle;font-size:18px;fill:#000000;}#mermaid-diagram-mermaid-vby9m8j rect.text{fill:none;stroke-width:0;}#mermaid-diagram-mermaid-vby9m8j .icon-shape,#mermaid-diagram-mermaid-vby9m8j .image-shape{background-color:white;text-align:center;}#mermaid-diagram-mermaid-vby9m8j .icon-shape p,#mermaid-diagram-mermaid-vby9m8j .image-shape p{background-color:white;padding:2px;}#mermaid-diagram-mermaid-vby9m8j .icon-shape rect,#mermaid-diagram-mermaid-vby9m8j .image-shape rect{opacity:0.5;background-color:white;fill:white;}#mermaid-diagram-mermaid-vby9m8j :root{--mermaid-font-family:"trebuchet ms",verdana,arial,sans-serif;}React FrontendDjango REST APICelery WorkerWhisper ASRClaude AIChromaDBGoogle Cloud Storage
+flowchart LR
+
+    subgraph Client
+        A[React Frontend]
+    end
+
+    subgraph Backend
+        B[Django REST API]
+        C[Celery Worker]
+        R[Redis / Broker]
+    end
+
+    subgraph AI_Services
+        D[Whisper ASR]
+        E[Claude AI]
+        F[ChromaDB]
+    end
+
+    subgraph Storage
+        G[Google Cloud Storage]
+    end
+
+    A --> B
+    B --> G
+    B --> R
+    R --> C
+
+    C --> D
+    C --> E
+    C --> F
+
+    F --> B
+    G --> B
 
 ☁️ Deployment
 Ready for Google Cloud Run.
